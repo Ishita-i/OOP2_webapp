@@ -1,0 +1,61 @@
+/* Main layout */
+
+a[highlight] {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.header {
+    text-align: center;
+    padding: 0 var(--lumo-space-m);
+}
+
+.header h1.logo {
+    text-align: justify-all;
+    font-size: 1em;
+    color: darkblue;
+    margin: var(--lumo-space-m);
+}
+
+/* List view */
+.list-view .content {
+    display: flex;
+}
+
+.list-view .patient-grid {
+    flex: 2;
+}
+
+.list-view .patient-form {
+    flex: 1;
+    padding: var(--lumo-space-m);
+}
+
+@media all and (max-width: 1100px) {
+    .list-view.editing .toolbar,
+    .list-view.editing .patient-grid {
+        display: none;
+    }
+}
+
+/* Dashboard view */
+
+.dashboard-view .patient-stats {
+    font-size: 4em;
+    margin: 1em 0;
+}
+
+/* Login view*/
+h1 {
+    text-align: center;
+    color: #cd5e85;
+    font-family: "Lucida Handwriting", cursive;
+    font-size: xx-large;
+}
+
+.h2 {
+    text-align: center;
+    justify-items: right;
+    justify-content: right;
+
+}
